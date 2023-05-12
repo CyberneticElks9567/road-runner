@@ -86,7 +86,7 @@ public class MotorDirectionDebugger extends LinearOpMode {
                 drive.setMotorPowers(0, 0, 0, 0);
                 telemetry.addLine("Running Motor: None");
             }
-
+            telemetry.addData("encoder: ", drive.getWheelPositions());
             telemetry.update();
         }
     }
